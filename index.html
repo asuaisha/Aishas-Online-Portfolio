@@ -3,148 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />  <!-- add this line -->
+    <title>Aisha Iregbulem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" /> <!-- add this line -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
   </head>
+  
   <body>
-
     <nav>
-        
-            <div class="logo">Aisha Iregbulem</div>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          
-      </nav>
-      <div class="stripe-banner"></div>
-      <section id="about">
-        <h2>About Me</h2>
-        <p> Hi, I'm Aisha! I'm a Computer Science junior at Arizona State University pursuing a Mathematics minor, with an expected graduation in 2027.
-            What drives me? I love understanding how complex systems work and figuring out why they break. Whether I'm writing code in C++, debugging algorithms, or designing software, I'm methodical about solving problems. I like understanding not just what works, but what breaks and why.
-            My technical interests span software engineering, quantitative development, data science, and AI/ML. I'm comfortable working across multiple programming languages and genuinely enjoy learning new technologies to solve challenging problems.
-            Right now, I'm building my first machine learning project, a stock market prediction model, to learn three things I want to develop: AI/ML fundamentals, financial market knowledge, and the discipline of building complete projects independently from start to finish.
-            When I'm not coding, I'm diving deep into aviation. I've always had a passion for aviation, growing up traveling frequently, and I spend my free time learning about all aspects of flight. I watch YouTube videos about aircraft systems, and analyze accident investigations.
-            I'm particularly fascinated by how small design flaws or procedural oversights compound into catastrophic failures. This has taught me to think systematically about risk and building systems that fail gracefully, an analytical mindset that carries directly into how I approach software engineering.
-            I'm currently seeking Summer 2027 internship opportunities where I can apply my technical skills to real-world problems and grow as an engineer in a fast-paced, challenging environment.
-            </p>
-      </section>
-      
-      <section id="projects">
-        <h2>Projects</h2>
-       
-         <a href="https://github.com/asuaisha/cpp-order-book-project" target="_blank" class="project-link">
-          <div class="project-card">
-            <h3> Order Book Simulator </h3>
-            <p class="project-type">Personal / Group / Class</p>
-            <p> I'm currently building a C++ program that simulates how stock exchanges match buy and sell orders, implementing fundamental trading system concepts. 
-                This personal project grew out of my interest in quantitative finance and desire to deepen my understanding of market microstructure. 
-                So far, I've designed an Order class with proper encapsulation to store order details including price, quantity, buy/sell side, and order type. 
-                I've implemented input validation and error handling to ensure orders contain valid data before processing. Throughout this project, I'm applying object-oriented programming principles I've learned in coursework to create modular, maintainable code. 
-                The next phase involves building the OrderBook class that will match orders using price-time priority, similar to how real exchanges operate. </p>
-            <p class="tech-stack">Python · Flask · SQL</p>
-          </div>
-        </a>
-
-          <div class="project-card">
-            <h3> Hydration Station </h3>
-            <p class="project-type">Personal / Group / Class</p>
-            <p> As Design Lead for the Hydration Station project through EPICS at ASU, I contributed to creating a public hygiene station for Phoenix's homeless population. 
-                My primary focus was researching and evaluating IoT sensor solutions for real-time soap level monitoring, which would help ensure the station remains stocked and functional. 
-                I investigated various automated notification methods including SMS, email, and dashboard alerts to notify community partners when supplies needed replacement.
-                After conducting this technical research, I presented my findings and recommendations to team leads for implementation consideration. 
-                Additionally, I developed a responsive website using HTML5, CSS3, and JavaScript to provide resource information and station status updates to both users and community partners. 
-                Throughout the project, I collaborated with a 6-person team using Git and GitHub for version control, and coordinated technical implementation across both hardware and software sub-teams. 
-                This experience taught me how to bridge research, implementation, and cross-functional collaboration in a real-world service project. </p>
-            <p class="tech-stack">Python · Flask · SQL</p>
-          </div>
-
-          <a href="https://github.com/lremer21/FSE-Group5" target="_blank" class="project-link">
-          <div class="project-card">
-            <h3> Autonomous Robot Navigation System </h3>
-            <p class="project-type">Personal / Group / Class</p>
-            <p> For this class project, I worked with a team to design and build a LEGO EV3 autonomous robot capable of navigating a color-coded maze and performing specific tasks at designated colors. 
-                I programmed the robot in MATLAB, implementing color recognition algorithms and finite state machine logic to control its behavior. One of my key contributions was designing a pathfinding algorithm that achieved an 85% success rate across over 50 test scenarios. 
-                I developed and executed a comprehensive test suite to validate navigation accuracy and error handling, which helped us identify and fix edge cases in our code. Through iterative optimization, I improved the robot's response time by 40% by refining sensor polling intervals and decision logic. 
-                Beyond the technical implementation, I created documentation to keep our professors informed of project progress, challenges we encountered, and the solutions we developed. 
-                This project strengthened my skills in algorithm design, testing methodology, and collaborative problem-solving under deadline pressure. </p>
-            <p class="tech-stack">Python · Flask · SQL</p>
-          </div>
-          </a>
-          <a href="https://aishasapps.shinyapps.io/diceapp/" target="_blank" class="project-link">
-          <div class="project-card">
-            <h3> Dice Roll Simulator </h3>
-            <p class="project-type">Personal</p>
-            <p> Built an interactive web application using R Shiny that simulates dice rolling experiments and visualizes the resulting probability distributions in real time. 
-              The app allows users to adjust the number of rolls (up to 10,000) and the number of dice (up to 10) using sliders, select between fair or biased dice using a dropdown menu, and optionally overlay a normal distribution curve to observe convergence. 
-              A summary statistics table displaying mean, median, standard deviation, minimum, and maximum updates dynamically with each simulation.
-              The app demonstrates the Central Limit Theorem in action — as the number of dice increases, the distribution of summed rolls visibly shifts from uniform to bell-shaped. Deployed publicly on shinyapps.io.
-              Skills demonstrated: R, Shiny, ggplot2, probability theory, statistical simulation, interactive data visualization, web deployment. </p>
-            <p class="tech-stack">R · Shiny · ggplot2</p>
-          </div>
-          </a>
-
-          <a href="https://comforting-bonbon-77215c.netlify.app/" target="_blank" class="project-link">
-          <div class="project-card">
-            <h3> Decimal to Binary Converter </h3>
-            <p class="project-type">Personal</p>
-            <p> I built a decimal to binary converter starting with a C++ command-line program, then extended it into a fully interactive web application. 
-              I implemented the conversion algorithm from scratch using repeated division logic without relying on any built-in conversion methods.
-              For the web version I designed a dark mode UI with an animated Matrix-style falling binary background using HTML5 Canvas, and styled the layout using CSS and Google Fonts. 
-              This was my first time building a web application and working with HTML, CSS, and JavaScript.</p>
-            <p class="tech-stack"> C++ · HTML ·  CSS · JavaScript</p>
-          </div>
-          </a>
-          
-          <a href="https://github.com/asuaisha/chess-prolog" target="_blank" class="project-link">
-          <div class="project-card">
-            <h3> AI Automated Chess Game </h3>
-            <p class="project-type">Personal</p>
-            <p> Developed an autonomous chess engine in SWI-Prolog as part of CSE 259:Logic in Computer Science at Arizona State University. 
-              Implemented a board visualization system using recursive Prolog predicates to render the game state as a formatted 8x8 grid. 
-              Built playerA's AI engine including a piece utility function, opening book moves, and strength evaluation using alpha-beta pruning for optimal move selection. 
-              Modified the game loop so both agents compete fully automatically, with the board updating after each round until checkmate or stalemate is reached. 
-              This project reinforced concepts in declarative programming, recursive list processing, and adversarial search algorithms. </p>
-            <p class="tech-stack"> SWI-Prolog </p>
-          </div>
-          </a>
-      </section>
-      
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-group">
-          <h3>Languages</h3>
-          <ul class="skills-list">
-            <li>C++</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>MATLAB</li>
-            <li>HTML · CSS · JavaScript</li>
-          </ul>
-        </div>
-      
-        <div class="skills-group">
-          <h3>Tools & Technologies</h3>
-          <ul class="skills-list">
-            <li>Git & GitHub</li>
-            <li>VS Code</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-      </section>
-      
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>I'm currently seeking Summer 2027 internship opportunities. Feel free to reach out!</p>
-
-  <div class="contact-links">
-    <a href="mailto:aishairegbulem@asu.edu">📧 aishairegbulem@asu.edu</a>
-    <a href="https://github.com/asuaisha" target="_blank">🐙 GitHub</a>
-    <a href="https://www.linkedin.com/in/aishairegbulem/" target="_blank">💼 LinkedIn</a>
-  </div>
-      </section>
-
+      <div class="logo">AI</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section id="hero">
+      <div class="hero-text">
+        <span class="welcome">welcome to my</span>
+        <span class="portfolio">PORTFOLIO</span>
+      </div>
+      <p class="hero-sub">( CS Student & Software Engineer )</p>
+    </section>
+    
   </body>
+  <script src="script.js"></script>
 </html>
