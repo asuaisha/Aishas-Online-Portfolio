@@ -263,3 +263,204 @@ nav ul a:hover {
   padding-bottom: 0;
   margin-top: 20rem;
 }
+
+
+
+
+
+
+
+
+
+/* PROJECTS SECTION */
+#projects {
+  background-color: #000000;
+  padding: 6rem 4rem;
+  min-height: 100vh;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-title {
+  font-family: 'MonsterratBold', serif;
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+
+/* FILTER BUTTONS */
+.projects-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  font-family: var(--body-font);
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #444;
+  background: transparent;
+  color: #aaaaaa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.filter-btn.active {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+/* PROJECT GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: #111111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--pink);
+  box-shadow: 
+    0 0 0 1px var(--pink),
+    0 0 20px rgba(255, 45, 120, 0.4),
+    0 0 60px rgba(255, 45, 120, 0.15),
+    0 12px 40px rgba(255, 45, 120, 0.2);
+}
+
+/* THUMBNAIL */
+.project-thumb {
+  width: 100%;
+  height: 180px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #222;
+  position: relative;
+}
+
+.project-thumb .status-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 0.68rem;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.status-badge.ongoing {
+  background: transparent;
+  color: #fbbf24;
+  border: 1px solid #fbbf24;
+}
+
+.status-badge.completed {
+  background: transparent;
+  color: #6ee7b7;
+  border: 1px solid #6ee7b7;
+}
+
+.project-icon {
+  font-size: 3.5rem;
+}
+
+/* CARD INFO */
+.project-info {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.project-info p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #888;
+  flex: 1;
+}
+
+/* TYPE BADGES */
+.project-type-badge {
+  font-family: var(--body-font);
+  font-size: 0.68rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.project-type-badge.personal {
+  background: rgba(255, 45, 120, 0.15);
+  color: var(--pink);
+}
+
+.project-type-badge.group {
+  background: rgba(120, 45, 255, 0.15);
+  color: #a78bfa;
+}
+
+.project-type-badge.class {
+  background: rgba(45, 200, 255, 0.15);
+  color: #67e8f9;
+}
+
+/* TECH TAGS */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: #222;
+  color: #aaa;
+  font-family: var(--body-font);
+  letter-spacing: 0.5px;
+}
+
+/* HIDDEN CARDS */
+.project-card.hidden {
+  display: none;
+}
