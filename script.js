@@ -1,15 +1,15 @@
 // add to your script.js
 VANTA.FOG({
     el: "#vanta-bg",
-  mouseControls: true,
-  touchControls: true,
-  highlightColor: 0xfc03a1,
-  midtoneColor: 0xeb0592,
-  lowlightColor: 0x080808,
-  baseColor: 0x000000,
-  blurFactor: 0.7,
-  speed: 0.5,
-  zoom: 0.1
+    mouseControls: true,
+    touchControls: true,
+    highlightColor: 0xff2d78,
+    midtoneColor: 0x990033,
+    lowlightColor: 0x080808,
+    baseColor: 0x000000,
+    blurFactor: 0.7,
+    speed: 0.5,
+    zoom: 0.3
   })
 
   const roles = [
@@ -19,6 +19,19 @@ VANTA.FOG({
     'Data Analyst',
     'ML Engineer'
   ];
+
+  VANTA.FOG({
+    el: "#vanta-bg-2",
+    mouseControls: true,
+    touchControls: true,
+    highlightColor: 0xff2d78,
+    midtoneColor: 0x990033,
+    lowlightColor: 0x080808,
+    baseColor: 0x000000,
+    blurFactor: 0.7,
+    speed: 0.5,
+    zoom: 0.2
+  })
   
   let roleIndex = 0;
   const roleEl = document.getElementById('rotating-role');
@@ -110,3 +123,10 @@ filterBtns.forEach(btn => {
     applyFilters();
   });
 });
+
+
+
+function handleContactForm(e) {
+    e.preventDefault();
+    alert('Thanks for your message! This form will be connected to a live service soon.');
+  }
