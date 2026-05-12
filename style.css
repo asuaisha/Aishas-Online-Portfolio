@@ -725,3 +725,131 @@ nav ul a:hover {
   z-index: 10;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav {
+    padding: 1rem 1.2rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav ul a {
+    font-size: 0.72rem;
+  }
+
+  /* HERO */
+  .hero-portfolio {
+    font-size: 18vw;
+  }
+
+  .hero-name {
+    font-size: 7vw;
+  }
+
+  .hero-role {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* ABOUT */
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .polaroid-stack {
+    width: 260px;
+    height: 360px;
+    margin: 0 auto;
+  }
+
+  .polaroid {
+    width: 240px;
+  }
+
+  .polaroid img {
+    height: 260px;
+  }
+
+  .about-left {
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  #about {
+    padding: 6rem 1.5rem 4rem 1.5rem;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .projects-container {
+    padding: 0 1rem;
+  }
+
+  #projects {
+    padding: 4rem 1rem;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #skills {
+    padding: 4rem 1.5rem;
+  }
+
+  .skills-container {
+    padding: 0;
+  }
+
+  /* CONTACT */
+  .contact-socials {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    transform: none;
+  }
+
+  .contact-container {
+    padding: 0 1.5rem;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-send {
+    font-size: 2rem;
+  }
+
+  .contact-script {
+    font-size: 2.5rem;
+  }
+
+  #contact {
+    padding: 4rem 1rem;
+  }
+
+}
