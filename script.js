@@ -128,5 +128,5 @@ filterBtns.forEach(btn => {
 
 function handleContactForm(e) {
     e.preventDefault();
-    alert('Thanks for your message! This form will be connected to a live service soon.');
+    alert('Thanks for your message!');
   }
