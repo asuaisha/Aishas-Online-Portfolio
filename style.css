@@ -852,4 +852,7 @@ nav ul a:hover {
     padding: 4rem 1rem;
   }
 
+  nav ul {
+    display: none;
+  }
 }
